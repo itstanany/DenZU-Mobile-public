@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
-  "file": "content-v1.json",
-  "bytes": 943104,
-  "sha256": "5bbf782402d24c365f84be18f4015e65b32a45b2b2f9735155affe6bbf715c75",
-  "minAppVersion": 11,
-  "publishedAt": 1795370846317
+  "schemaVersion": 2,
+  "file": "content-v2.json",
+  "bytes": 943105,
+  "sha256": "d6c4004c1c324c06418ce86a3db1271d19c19131db1e04880e62ad2d13739e42",
+  "minAppVersion": 1,
+  "publishedAt": 1795525505352
 }
