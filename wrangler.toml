@@ -1,0 +1,14 @@
+# Cloudflare Worker that serves the content host and the legal pages.
+#
+# Deploy with `wrangler deploy` (or connect this repository in the Cloudflare dashboard:
+# Workers -> Create -> connect to Git, root directory `/`, build command empty, deploy command
+# `wrangler deploy`). The name here *is* the public host of the Worker, and the app pins it in
+# `ContentHosts.WORKER` — renaming it changes an app constant, so change both together.
+name = "denzu-mobile-public"
+compatibility_date = "2026-11-24"
+
+# Static assets only: no script, no runtime. `denzu/` is the asset root because the app requests
+# `<host>/content/manifest.json` and GitHub Pages publishes the repository root instead, so the same
+# committed file has to answer at `/content/…` here and `/denzu/content/…` there.
+[assets]
+directory = "./denzu"
